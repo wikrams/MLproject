@@ -5,9 +5,9 @@ HYPHEN_E_DOT = "-e ."
 
 
 def get_requirements(file_path: str) -> List[str]:
-    '''
+    """
     this function will return the list of requirements
-    '''
+    """
     requirements = []
     with open(file_path) as file_obj:
         requirements = file_obj.readlines()
@@ -20,13 +20,11 @@ def get_requirements(file_path: str) -> List[str]:
 
 
 setup(
-    name='ml_project',
+    name="ml_project",
     packages=find_packages(),
-    version='0.1.0',
-    author='Vikram',
-    author_email='wikrams@gmail.com',
-    install_requires=get_requirements('requirements.txt'),
+    version="0.1.0",
+    author="Vikram",
+    author_email="wikrams@gmail.com",
+    url="https://github.com/wikrams/mlproject",
+    install_requires=get_requirements("requirements.txt"),
 )
-
-
-
